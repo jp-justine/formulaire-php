@@ -8,11 +8,11 @@
 <form  action="thanks.php"  method="post">
     <div>
       <label  for="nom">Nom :</label>
-      <input  type="text"  id="nom"  name="user_lastname">
+      <input  type="text"  id="nom"  name="lastName">
     </div>
     <div>
       <label  for="Prenom">Prenom :</label>
-      <input  type="text"  id="Prenom"  name="user_firstname">
+      <input  type="text"  id="Prenom"  name="firstName">
     </div>
     <div>
       <label  for="tel">Numero de tel :</label>
@@ -20,11 +20,12 @@
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email">
+        <input  type="email"  id="courriel"  name="email">
     </div>
     <div>
-    <label for="sujets">choissisez un sujet:</label>
-<select id="sujets" name="sujets">
+    <label for="subjets">choissisez un sujet:</label>
+<select id="subjets" name="subjets">
+  <option value="">choissisez une option</option>
   <option value="problemestechnique">Problemes technique</option>
   <option value="commandes">Commandes</option>
   <option value="infos">demande d'informations</option>
@@ -33,16 +34,12 @@
 </div>
     <div>
       <label  for="message">Message :</label>
-      <textarea  id="message"  name="user_message"></textarea>
+      <textarea  id="message"  name="message"></textarea>
     </div>
     <div  class="button">
-      <button  type="submit" >Envoyer votre message</button>
+      <button  type="submit">Envoyer votre message</button>
     </div>
-    
   </form>
-  <?php
-  var_dump($_POST);
-?>
   </body>
 </html>
 

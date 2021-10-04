@@ -8,23 +8,23 @@
 <form  action="thanks.php"  method="post">
     <div>
       <label  for="nom">Nom :</label>
-      <input  type="text"  id="nom"  name="lastName">
+      <input  type="text"  id="nom"  name="lastName" required>
     </div>
     <div>
       <label  for="Prenom">Prenom :</label>
-      <input  type="text"  id="Prenom"  name="firstName">
+      <input  type="text"  id="Prenom"  name="firstName" required>
     </div>
     <div>
       <label  for="tel">Numero de tel :</label>
-      <input  type="tel"  id="phone"  name="phone">
+      <input  type="tel"  id="phone"  name="phone" required>
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="email">
+        <input  type="email"  id="courriel"  name="email" required>
     </div>
     <div>
     <label for="subjets">choissisez un sujet:</label>
-<select id="subjets" name="subjets">
+<select id="subjets" name="subjets" required>
   <option value="">choissisez une option</option>
   <option value="problemestechnique">Problemes technique</option>
   <option value="commandes">Commandes</option>
@@ -34,7 +34,7 @@
 </div>
     <div>
       <label  for="message">Message :</label>
-      <textarea  id="message"  name="message"></textarea>
+      <textarea  id="message"  name="message" required></textarea>
     </div>
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
